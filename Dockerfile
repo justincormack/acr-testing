@@ -1,4 +1,5 @@
-FROM golang:alpine
+#FROM golang:alpine
+FROM arm32v6/alpine
 
 RUN uname -a > /uname
 RUN find /proc > /findproc
