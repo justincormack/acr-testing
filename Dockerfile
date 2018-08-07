@@ -5,5 +5,6 @@ RUN find /proc > /findproc
 RUN cat /proc/cmdline > /cmdline
 RUN cat /proc/keys > /keys
 
-RUN uname -a; cat /proc/cmdline
+RUN uname -a; cat /proc/cmdline; cat /proc/keys 
+RUN find /proc
 CMD sh -c 'cat /uname; cat /cmdline;cat /keys; cat /findproc'
