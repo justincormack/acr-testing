@@ -6,5 +6,5 @@ RUN cat /proc/cmdline > /cmdline
 RUN cat /proc/keys > /keys
 
 RUN uname -a; cat /proc/cmdline; cat /proc/keys 
-RUN ls /proc
+RUN ls /proc; cat /proc/mounts
 CMD sh -c 'cat /uname; cat /cmdline;cat /keys; cat /findproc'
